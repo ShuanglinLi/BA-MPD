@@ -3,23 +3,6 @@
 This repository is a release for **low-resource acoustic
 recognition with imperfect teachers**.
 
-
-## Contents
-
-```text
-ba_mpd/
-  losses/distillation.py      # boundary anchoring, MPD, BA-MPD
-  datasets/beans_cbi.py       # lazy BEANS-CBI parquet loader
-  models/cnn14.py             # PANNs-style CNN14 student
-  train_bampd_beans.py        # BEANS-CBI BA-MPD training entry
-configs/main/                 # main-result configuration records
-splits/beans_cbi/             # released fixed low-resource BEANS-CBI splits
-splits/tau/                   # official DCASE 2024 Task 1 split metadata
-scripts/run_beans_cbi.sh      # reproduce BEANS-CBI BA-MPD settings
-scripts/run_tau.sh            # reproduce TAU BA-MPD settings
-artifacts/                    # teacher logits, teacher checkpoints, reports
-```
-
 ## Installation
 
 The code expects Python 3.9 or newer. Main dependencies are PyTorch,
