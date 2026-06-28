@@ -64,7 +64,7 @@ artifacts/
 ```
 The class order for BEANS-CBI is defined by `splits/beans_cbi/label_mapping.csv`.
 
-## Reproduce Main BA-MPD Results
+## Quick Start
 
 To run the BA-MPD experiments corresponding to the paper's main-result budgets,
 use the dataset-specific scripts:
