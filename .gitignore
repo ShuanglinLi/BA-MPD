@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+outputs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+!artifacts/
+!artifacts/**
+wandb/

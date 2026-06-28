@@ -1,0 +1,25 @@
+benchmark: beans_cbi
+budget: 10
+objective: ba-mpd
+student: cnn14
+teacher: cnn14
+num_classes: 264
+data:
+  train_csv: splits/beans_cbi/train_10.csv
+  valid_csv: splits/beans_cbi/valid.csv
+  test_csv: splits/beans_cbi/test.csv
+  label_mapping_csv: splits/beans_cbi/label_mapping.csv
+artifacts:
+  teacher_logits_npy: artifacts/teacher_logits/beans_cbi/train_10_logits.npy
+  teacher_logits_index: artifacts/teacher_logits/beans_cbi/train_10_logits.index.json
+training:
+  epochs: 20
+  batch_size: 32
+  lr: 3.0e-4
+  weight_decay: 1.0e-4
+  warmup_steps: 200
+distillation:
+  temperature: 2.0
+  kd_weight: 0.3
+  top_k: 5
+  alpha: 2.0

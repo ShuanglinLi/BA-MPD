@@ -1,0 +1,78 @@
+{
+  "notes": {
+    "beans_cbi": "This release provides one fixed BEANS-CBI split/trial for reproduction. The paper table reports averages over multiple trials, so the released single-trial teacher metrics need not equal the paper mean exactly.",
+    "tau": "TAU teacher metrics are evaluated on the official test split and match the teacher reference row reported in the paper."
+  },
+  "paper_reference_rows": {
+    "beans_cbi_paper_mean": {
+      "10": {
+        "macro": 6.8,
+        "macro_f1": 6.0,
+        "micro": 7.32
+      },
+      "25": {
+        "macro": 19.33,
+        "macro_f1": 17.47,
+        "micro": 21.33
+      },
+      "50": {
+        "macro": 37.8,
+        "macro_f1": 35.3,
+        "micro": 40.77
+      }
+    },
+    "tau": {
+      "5": {
+        "macro": 47.82,
+        "seen": 43.78,
+        "unseen": 45.19
+      },
+      "10": {
+        "macro": 49.74,
+        "seen": 45.55,
+        "unseen": 47.22
+      },
+      "25": {
+        "macro": 50.53,
+        "seen": 45.9,
+        "unseen": 48.18
+      }
+    }
+  },
+  "released_teacher_metrics": {
+    "beans_cbi": {
+      "10": {
+        "macro": 7.634752860193601,
+        "macro_f1": 6.868182203117544,
+        "micro": 8.56353591160221
+      },
+      "25": {
+        "macro": 20.603921691588585,
+        "macro_f1": 18.895271023985416,
+        "micro": 22.92817679558011
+      },
+      "50": {
+        "macro": 37.602566352248424,
+        "macro_f1": 35.058831507977686,
+        "micro": 40.58011049723757
+      }
+    },
+    "tau": {
+      "5": {
+        "macro": 47.81544044044044,
+        "seen": 43.77777777777777,
+        "unseen": 45.19191919191919
+      },
+      "10": {
+        "macro": 49.74022886522886,
+        "seen": 45.545454545454554,
+        "unseen": 47.22222222222222
+      },
+      "25": {
+        "macro": 50.52898352898353,
+        "seen": 45.898989898989896,
+        "unseen": 48.18181818181819
+      }
+    }
+  }
+}

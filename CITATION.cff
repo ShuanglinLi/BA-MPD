@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Learning from Imperfect Teachers for Low-Resource Acoustic Generalization"
+message: "If you use this code or artifacts, please cite the paper."
+type: software
+authors:
+  - family-names: "TBD"
+    given-names: "TBD"
+year: 2026
+repository-code: "https://github.com/TBD/ba-mpd"

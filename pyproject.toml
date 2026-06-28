@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ba-mpd"
+version = "0.1.0"
+description = "Minimal method release for Boundary-Anchored Mass-Partitioned Distillation."
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "pandas",
+  "pyarrow",
+  "scikit-learn",
+  "soundfile",
+  "torch",
+  "torchaudio",
+]
+
+[tool.setuptools.packages.find]
+include = ["ba_mpd*"]

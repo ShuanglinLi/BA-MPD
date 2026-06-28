@@ -1,0 +1,21 @@
+benchmark: tau_urban_acoustic_scenes
+budget: 10
+objective: ba-mpd
+student: cp-mobile
+teacher: passt
+num_classes: 10
+data:
+  train_csv: splits/tau/train_10.csv
+  test_csv: splits/tau/test.csv
+  delimiter: tab
+artifacts:
+  teacher_logits_npy: artifacts/teacher_logits/tau/train_10_logits.npy
+  teacher_logits_index: artifacts/teacher_logits/tau/train_10_logits.index.json
+training:
+  epochs: 150
+  batch_size: 256
+distillation:
+  temperature: 2.0
+  kd_weight: 0.3
+  top_k: 2
+  alpha: 2.0
