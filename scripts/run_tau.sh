@@ -68,7 +68,6 @@ run_one() {
       --kd_loss_type anchor_tad \
       --tad_top_k 2 \
       --tad_tail_weight 2.0 \
-      --kd_luminet_blend 0.0 \
       --metrics_out "${metrics}"
   ) 2>&1 | tee "${log_file}"
   echo "[$(date '+%F %T')] done TAU budget=${budget} BA-MPD"
