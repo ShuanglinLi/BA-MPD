@@ -62,7 +62,14 @@ artifacts/
     tau/
   reports/
 ```
+
 The class order for BEANS-CBI is defined by `splits/beans_cbi/label_mapping.csv`.
+
+## Student Checkpoints
+
+Student checkpoints for TAU and BEANS-CBI are available in the GitHub release:
+
+[Download student checkpoints (TAU and BEANS-CBI)](https://github.com/ShuanglinLi/BA-MPD/releases/tag/v1.0-student-checkpoints)
 
 ## Quick Start
 
