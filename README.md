@@ -73,22 +73,15 @@ Student checkpoints for TAU and BEANS-CBI are available in the GitHub release:
 
 ## Quick Start
 
-To run the BA-MPD experiments corresponding to the paper's main-result budgets,
-use the dataset-specific scripts:
+After setting up the datasets, run the following scripts to reproduce the paper’s main results across different label budgets:
 
 ```bash
-export BEANS_CBI_DATA_DIR=/path/to/beans_cbi/parquet
-export DCASE_TASK1_REPO=/path/to/dcase2024_task1_baseline_official
-export DCASE24_DATASET_DIR=/path/to/TAU-urban-acoustic-scenes-2022-mobile-development
-
 bash scripts/run_tau.sh
 bash scripts/run_beans_cbi.sh
 ```
 
-For a BEANS-CBI-only run:
+To run a specific BEANS-CBI label budget:
 
 ```bash
-export BEANS_CBI_DATA_DIR=/path/to/beans_cbi/parquet
-export TEACHER_LOGITS_DIR=artifacts/teacher_logits/beans_cbi
 BUDGETS="25" bash scripts/run_beans_cbi.sh
 ```
